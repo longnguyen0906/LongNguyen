@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>CƠ BẢN VỀ LIST</h1>
+        <h3>ORDER LIST</h3>
+        <p>
+            Sử dụng thẻ OL và LI để định nghĩa danh sách<br>
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item...</li>
+            </ol>            
+        </p>
+        <p>
+            Sử dụng attribute <B>START</B> để set số bắt đầu<br>
+            <ol start="3">
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item...</li>
+            </ol>
+        </p>
+        <p>
+            Sử dụng attribute <b>VALUE</b> trong thẻ <b>LI</b> để reset lai giá trị bắt đầu<br>
+            <ol start="7">
+                <li>item 7</li>
+                <li>item 8</li>
+                <li value="3"><MARK>item 3</MARK></li>
+                <li>item 4</li>
+            </ol>
+        </p>
+        <p>
+            Sử dụng attribute <b>REVERSED</b> để đảo chiều đếm<br>
+            <ol reversed>
+                <li>item đầu</li>
+                <li>item n-1</li>
+                <li>item....</li>
+                <li>item cuối</li>
+            </ol>
+        </p>
+        <p>
+            Sử dụng attribute <b>TYPE</b> để thay đổi kiểu<br>
+            Các giá trị cho kiểu gồm : "1|a|A|i|I"
+            <ol type="A" reversed>
+                <li>item đầu</li>
+                <li>....</li>
+                <li>item cuối</li>
+            </ol>
+        </p>
+        <p>
+            <b>Nested List</b>
+            <ol type="A">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3
+                    <ol type="I">
+                        <li>item C1</li>
+                            <ol type="a">
+                                <li>item 11</li>
+                                <li>item 12</li>
+                                <li>item 13</li>
+                            </ol>
+                        <li>item C2</li>
+                        <li>item C3</li>
+                    </ol>
+                </li>
+                <li>item 4</li>
+            </ol>
+        </p>
+        <hr>
+        <h3>UNORDER LIST</h3>
+        <p>
+            Sử dụng UL và LI để định nghĩa danh sách<br>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </p>
+        <p>
+            <b>Nested List</b>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3
+                    <ul>
+                        <li>item 3.1</li>
+                        <li>item 3.2</li>
+                        <li>item 3.3</li>
+                    </ul>
+                </li>
+                <li>item 4</li>
+            </ul>
+        </p>
+        <hr>
+        <h3>DESCRIPTION LIST</h3>
+        <P>
+            Sử dụng DL, DT và DD để định nghĩa danh sách<br>
+            <dl>
+                <dt>item 1</dt>
+                    <dd>value 1</dd>
+                <dt>item 2.1</dt>
+                <dt>item 2.2</dt>
+                    <dd>value 2</dd>
+                <dt>item 3</dt>
+                    <dd>value 3.1</dd>
+                    <dd>value 3.2</dd>
+            </dl>
+        </P>
+        <h1>KẾT THÚC BÀI HỌC</h1>    
+    </body>
+</html>

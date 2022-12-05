@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Images</title>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>THẺ IMG CƠ BẢN</h1>
+        <H3>CÁC THUỘC TÍNH CỦA THẺ IMG</H3>
+        <P>
+            <b>src</b>: đường dẫn đến file image.<br>
+            <b>srcset</b>: hình ảnh sử dụng cho nhiều độ phân giải khác nhau.<br>
+            <b>sizes</b>: kích thước hình ảnh cho các độ phân giải khác nhau.<br>
+            <b>crossorigin</b>: <br>
+            <b>usemap</b>: sử dụng img map.<br>
+            <b>ismap</b>: server side img map.<br>
+            <b>alt</b>: alternate text khi img không load.<br>
+            <b>width</b>: độ rộng của img.<br>
+            <b>height</b>: chiều cao của img.<br>
+        </P>
+        <h3>SỬ DỤNG THẺ IMG</h3>
+        <p>
+            <img src="image/img1.bmp">
+        </p>
+        <p>
+            <img src="image/img2.bmp" alt="text xuất hiện khi hình không load">
+        </p>
+        <p>
+            Kết hợp thẻ <b>a</b> để liên kết đến trang khác: <br>
+            <a href="http://google.com.vn/"><img src="image/workplace.jpg"></a>
+        </p>
+        <p>
+            Responsive img với thuộc tính <b>srcset</b> và <b>size</b><br>
+            <img 
+            size="(min-width: 1200px) 200px,
+            (min-width: 640px) 20vw,
+            98vw"
+            srcset="image/workplace.jpg 500w,
+            image/img1.bmp 1200w">
+        </p>
+        <H1>KẾT THÚC BÀI HỌC</H1>
+    </body>
+</html>

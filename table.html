@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Table</title>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h3>Dùng thẻ TABLE, TR, TD để định nghĩa 1 bảng</h3>           
+        <table>
+            <tr>
+                <td>dòng 1 cột 1</td>
+                <td>dòng 1 cột 2</td>
+                <td>dòng 1 cột 3</td>
+            </tr>
+            <tr>
+                <td>dòng 2 cột 1</td>
+                <td>dòng 2 cột 2</td>
+                <td>dòng 2 cột 3</td>
+            </tr>
+        </table>
+        <h3>Sử dụng thẻ TH để định nghĩa tiêu đề cho bảng</h3>
+        <table>
+            <tr>
+                <th>tiêu đề cột 1</th>
+                <th>tiêu đề cột 2</th>
+                <th>tiêu đề cột 3</th>
+            </tr>
+            <tr>
+                <th>tiêu đề dòng 1</th>
+                <td>dòng 1 cột 2</td>
+                <td>dòng 1 cột 3</td>
+            </tr>
+            <tr>
+                <th>tiêu đề dòng 2</th>
+                <td>dòng 2 cột 2</td>
+                <td>dòng 2 cột 3</td>
+            </tr>                
+        </table>
+        <h3>Dùng thuộc tính ROWSPAN hoặc COLSPAN trên thẻ TH hoặc TD để ghép 2 cột hoặc dòng</h3>
+        <table>
+            <tr>
+                <th>tiêu đề cột 1</th>
+                <th colspan="2">tiêu đề cột 2 + 3</th>
+            </tr>
+            <tr>
+                <th rowspan="2">tiêu đề dòng 1 + 2</th>
+                <td>dòng 1 cột 2</td>
+                <td>dòng 1 cột 3</td>
+            </tr>
+            <tr>
+                <td>dòng 2 cột 2</td>
+                <td>dòng 2 cột 3</td>
+            </tr>                
+        </table>
+        <h3>Các thành phần khác của TABLE</h3>
+        <b>Caption</b>: thông tin của bảng (tên bảng)<br>
+        <b>colgroup</b>: nhóm các cột cùng kiểu.<br>
+        <b>col</b>: thành phần con của colgroup. Tham chiếu đến các cột trong bảng.<br>
+        <b>thead</b>: phần tiêu đề.<br>
+        <b>tbody</b>: nội dung bảng.<br>
+        <b>tfoot</b>: thông tin khác, tổng kết bảng<br>
+        
+        <table>
+            <caption>TABLE CAPTION</caption>
+            <colgroup>
+                <col id="cot1"/>
+            </colgroup>
+            <colgroup span="2">
+                <col id="cot23"/>
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>tiêu đề 1</th>
+                    <th>tiêu đề 2</th>
+                    <th>tiêu đề 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>hàng 1 cột 1</td>
+                    <td>hàng 1 cột 2</td>
+                    <td>hàng 1 cột 3</td>
+                </tr>
+                <tr>
+                    <td>hàng 2 cột 1</td>
+                    <td>hàng 2 cột 2</td>
+                    <td>hàng 2 cột 3</td>
+                </tr>
+                <tr>
+                    <td>hàng 3 cột 1</td>
+                    <td>hàng 3 cột 2</td>
+                    <td>hàng 3 cột 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>foot cột 1</td>
+                    <td>foot cột 1</td>
+                    <td>foot cột 1</td>
+                </tr>
+            </tfoot>
+        </table>    
+    </body>
+</html>
